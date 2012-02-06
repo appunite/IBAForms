@@ -30,6 +30,9 @@
 @synthesize valueTextAlignment = valueTextAlignment_;
 @synthesize valueAutoresizingMask = valueAutoresizingMask_;
 @synthesize activeColor = activeColor_;
+@synthesize keyboardType = keyboardType_;
+@synthesize autocapitalizationType = autocapitalizationType_;
+@synthesize autocorrectionType = autocorrectionType_;
 
 - (void)dealloc {
 	IBA_RELEASE_SAFELY(labelTextColor_);
@@ -63,6 +66,10 @@
 		self.valueAutoresizingMask = UIViewAutoresizingFlexibleWidth;
 
 		self.activeColor = IBAFormFieldActiveColor;
+        
+        self.keyboardType = UIKeyboardTypeDefault;
+        self.autocapitalizationType = UITextAutocapitalizationTypeSentences;
+        self.autocorrectionType = UITextAutocorrectionTypeDefault;
 	}
 	
 	return self;
