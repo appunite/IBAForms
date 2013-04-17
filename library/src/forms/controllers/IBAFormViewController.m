@@ -252,7 +252,9 @@
 }
 
 - (void)inputManagerDidHide:(NSNotification *)notification {
-	[self adjustTableViewHeightForCoveringFrame:CGRectZero];
+    if (![[IBAInputManager sharedIBAInputManager] activeInputRequestor]) {
+        [self adjustTableViewHeightForCoveringFrame:CGRectZero];
+    }
 }
 
 - (void)formFieldActivated:(NSNotification *)notification {
