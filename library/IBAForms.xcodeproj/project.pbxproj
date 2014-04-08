@@ -457,10 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/IBAForms.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -468,7 +465,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IBAForms_Prefix.pch;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = IBAForms;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,15 +476,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/IBAForms.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IBAForms_Prefix.pch;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = IBAForms;
 				TARGETED_DEVICE_FAMILY = "1,2";
